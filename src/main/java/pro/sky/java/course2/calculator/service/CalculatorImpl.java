@@ -16,4 +16,8 @@ public class CalculatorImpl implements CalculatorInterface{
     public int multiplicationResult(int num1, int num2) {
         return num1 * num2;
     }
+
+    public int divisionResult(int num1, int num2) {
+        return num1 / num2;
+    }
 }

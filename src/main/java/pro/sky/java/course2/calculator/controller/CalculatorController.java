@@ -32,6 +32,15 @@ public class CalculatorController {
 
     @GetMapping("/multiply")
     public String multiply(@RequestParam int num1, @RequestParam int num2) {
-        return num1 + " - " + num2 + " = " + calculatorInterface.multiplicationResult(num1, num2);
+        return num1 + " * " + num2 + " = " + calculatorInterface.multiplicationResult(num1, num2);
+    }
+
+    @GetMapping("/divide")
+    public String divide(@RequestParam int num1, @RequestParam int num2) {
+        if (num2 != 0) {
+            return num1 + " / " + num2 + " = " + calculatorInterface.divisionResult(num1, num2);
+        } else {
+            return "Деление на ноль невозможно!";
+        }
     }
 }

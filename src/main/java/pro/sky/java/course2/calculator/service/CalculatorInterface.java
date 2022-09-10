@@ -7,4 +7,6 @@ public interface CalculatorInterface {
     int subtractionResult(int num1, int num2);
 
     int multiplicationResult(int num1, int num2);
+
+    int divisionResult(int num1, int num2);
 }
