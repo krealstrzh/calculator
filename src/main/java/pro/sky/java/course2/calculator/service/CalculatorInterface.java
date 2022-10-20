@@ -8,5 +8,5 @@ public interface CalculatorInterface {
 
     int multiplicationResult(int num1, int num2);
 
-    int divisionResult(int num1, int num2);
+    double divisionResult(int num1, int num2);
 }
